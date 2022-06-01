@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculadora</title>
+</head>
+<body>
+    <script>
+    var i= 1
+    while (i==1) {let n1 = prompt("Ingresa el numero 1");
+    n1 = (n1=="")?"0":n1;
+    let n2 = prompt("Ingresa el numero 2");
+    n2 = (n2=="")?"0":n2;
+
+
+    let n3 = prompt("Que desea hacer: \n1.Suma \n2.Resta \n3.Multiplicacion \n4.Division");
+
+    if(n3 == '1'){
+    n4 = parseInt(n1) + parseInt(n2);
+    }else if( n3 == '2'){
+    n4 = parseInt(n1) - parseInt(n2);
+    }else if(n3 == '3'){
+    n4 = parseInt(n1) * parseInt(n2);
+    }else if(n3== '4'){
+    n4 = parseInt(n1) / parseInt(n2);
+    }
+    console.log(n4);
+    alert("El resultado es=" + n4 );
+    
+    var e = prompt("Desea continuar: \nSi=1 \nN=2");}
+
+    if (e != 1){
+        console.log("Eso es todo");
+    }
+
+    </script>
+    
+
+</body>
+</html>
